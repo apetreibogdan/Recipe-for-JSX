@@ -1,3 +1,7 @@
+import './App.css';
+import perfectionSaladImg from './images/perfection_salad.jpg';
+
+
 function App() {
   const ingredients = [
     {
@@ -48,8 +52,13 @@ function App() {
   console.log(ingredients)
   
   return (
-    <div>
-        Grandma's recipes
+    <div className='container'>
+        <h1>Grandma's recipes</h1>
+        <img src={perfectionSaladImg} alt="Perfection Salad" />
+        <h2>Ingredients</h2>
+        <ul>
+          {ingredients.map(ingredient =>(<li>{ingredient.quantity} {ingredient.name}</li>))}
+        </ul>
     </div>
   );
 }
