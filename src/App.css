@@ -11,3 +11,11 @@
 ol {
     padding: 0;
 }
+
+.liQuantity{
+  color: red;
+}
+
+.highlightText{
+  background-color:#c0ffc8;
+}
